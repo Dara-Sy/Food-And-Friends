@@ -21,7 +21,7 @@ Animal cafes are popping up in major cities all over the world, to the delight o
 
 ## Piority Matrix:
 
-<imf src ='http://res.cloudinary.com/daracell/image/upload/v1524143941/Unit2%20Project/FullSizeRender.jpg'/> 
+<img src ='http://res.cloudinary.com/daracell/image/upload/v1524143941/Unit2%20Project/FullSizeRender.jpg'/> 
 
 ## Technologies: 
 - HTML / EJS - used to render the views of the CRUD app
