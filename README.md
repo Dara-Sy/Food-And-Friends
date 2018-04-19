@@ -1,8 +1,8 @@
 # project2
 
-Project Name: Food & Friends
+## Project Name: Food & Friends
 
-Description: 
+## Description: 
 
 Animal cafes are popping up in major cities all over the world, to the delight of travelers looking to get their fix of caffeine and cuteness. Featuring cats, dogs, woodland creatures and farm animals, these animal cafes offer unforgettable experiences with the world’s cutest baristas.
 
@@ -13,17 +13,17 @@ Animal cafes are popping up in major cities all over the world, to the delight o
 - Users can search up cafes by animal type (ie. Dogs, cats, hedgehogs, etc.)
 
 
-Wireframe:
+## Wireframe:
 
 <img src='http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6053.jpg'/> 
 
 <img src='http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6054.jpg'/> 
 
-Piority Matrix:
+## Piority Matrix:
 
 <imf src ='http://res.cloudinary.com/daracell/image/upload/v1524143941/Unit2%20Project/FullSizeRender.jpg'/> 
 
-Technologies: 
+## Technologies: 
 - HTML / EJS - used to render the views of the CRUD app
 - Node and Express - the modules for the CRU app 
 - MVC Pattern - the Models, Views, Controllers for the CRU app 
@@ -31,7 +31,7 @@ Technologies:
 - CSS & Design - to make the CRUD app presentable 
 - Google Maps API (Bonus/ Post MVP) - possibly to map/locate the animal cafes
 
-Installation Instructions: 
+## Installation Instructions: 
 - Go into my repo
 - Fork and Git Clone
 - subl . 
