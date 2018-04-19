@@ -4,9 +4,13 @@ Project Name: Food & Friends
 
 Description: 
 
+Animal cafes are popping up in major cities all over the world, to the delight of travelers looking to get their fix of caffeine and cuteness. Featuring cats, dogs, woodland creatures and farm animals, these animal cafes offer unforgettable experiences with the world’s cutest baristas.
+
 - CRUD App List Builder
 - Database that lists animal cafes all around the world 
 - Consumers/users can search, save, and add to the list of animal cafes 
+- Features include a log in session to save users' activities, such as favoriting a cafe or adding a cafe 
+- Users can search up cafes by animal type (ie. Dogs, cats, hedgehogs, etc.)
 
 
 Wireframe:
@@ -14,6 +18,10 @@ Wireframe:
 <img src='http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6053.jpg'/> 
 
 <img src='http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6054.jpg'/> 
+
+Piority Matrix:
+
+<imf src ='http://res.cloudinary.com/daracell/image/upload/v1524143941/Unit2%20Project/FullSizeRender.jpg'/> 
 
 Technologies: 
 - HTML / EJS - used to render the views of the CRUD app
@@ -29,10 +37,55 @@ Installation Instructions:
 - subl . 
 - npm i 
 - npm init 
+- npm run dev
 - Go into the Terminal Command Line
 - Enter psql 
 - \c animal_cafes 
 - \d cafe 
 - \d user 
+
+
+## CRUD App Components
+
+### Landing Page
+What will a user/guest see when they start your app?
+The landing view will have a 'search' button and a list of animals they can view to see lists of cafes. 
+
+###  App Initialization & Using the App
+A user can search up cafes by animal type. A user can fill out a form to search or add a new cafe. A sure can also favorite a cafe. 
+
+
+## MVP 
+
+Include the full list of features that will be part of your MVP 
+- Pseudocode and organization
+- Landing View
+- List View
+- Form 
+- Event Listeners
+- Searching List
+- Adding to List
+- Log In
+
+
+## POST MVP
+
+Include the full list of features that you are considering for POST MVP
+## Functional Components
+
+- API
+- Location cafes using Google Maps API 
+
+
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+
+Form  |  H   | 6hrs   | 0hrs  |   0hrs
+Adding images   |  L   | 3hrs   | 0hrs  |   0hrs
+App Logic   |  H   | 10hrs   | 0hrs  |   0hrs
+Views   |  L   | 4hrs   | 0hrs  |   0hrs
+
+## Additional Technologies
+ Use this section to list all supporting libraries and thier role in the project. 
+ Google Maps API
 
 
