@@ -90,6 +90,6 @@ Include the full list of features that you are considering for POST MVP
 
 ## Additional Technologies
  Use this section to list all supporting libraries and thier role in the project. 
- Google Maps API
+ Google Places ID API
 
 
