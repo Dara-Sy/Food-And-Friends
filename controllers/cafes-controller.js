@@ -14,6 +14,19 @@ function getAllCafes(req, res, next) {
   })
 }
 
+function getAllCafesList(req, res, next) {
+  console.log('List the cafes here');
+  cafeDb.getAllCafesList()
+  .then(data => {
+    res.locals.cafes = data;
+    next();
+
+  })
+  .catch(err => {
+    next(err);
+  })
+}
+
 function getAllBunnies(req, res, next) {
   console.log('List the bunnies here');
   cafeDb.getAllBunnies()
@@ -79,11 +92,23 @@ function getAllReptiles(req, res, next) {
   })
 }
 
+function create(req, res, next) {
+  cafeDb.createCafe(req.body)
+  .then(data => {
+    res.locals.newCafe = data;
+    next();
+  })
+  .catch(err => {
+    next(err);
+  })
+}
 module.exports = {
   getAllCafes,
+  getAllCafesList,
   getAllBunnies,
   getAllCats,
   getAllDogs,
   getAllHedgehogs,
-  getAllReptiles
+  getAllReptiles,
+  create
 }

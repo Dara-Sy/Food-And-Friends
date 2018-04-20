@@ -6,6 +6,15 @@ function getAllCafes() {
   return queryPromise;
 }
 
+function getAllCafesList() {
+  const queryPromise = db.many(`
+    SELECT *
+    FROM cafes
+    ORDER BY name
+  `);
+  return queryPromise;
+}
+
 function getAllBunnies() {
   const queryPromise = db.manyOrNone(`
     SELECT * FROM cafes
@@ -41,13 +50,26 @@ function getAllReptiles() {
   return queryPromise;
 }
 
+function createCafe(cafe) {
+  debugger;
+  const query = db.one(`
+    INSERT INTO cafes
+    (name, animal, location)
+    VALUES ($/name/, $/animal/, $/location/)
+    RETURNING *`,
+    cafe);
+  return query;
+}
+
 
 module.exports = {
   getAllCafes,
+  getAllCafesList,
   getAllBunnies,
   getAllCats,
   getAllDogs,
   getAllHedgehogs,
-  getAllReptiles
+  getAllReptiles,
+  createCafe
 
   }

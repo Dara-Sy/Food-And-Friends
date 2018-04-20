@@ -15,16 +15,19 @@ app.use(logger('dev'));
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', cafesRouter);
+app.use('/allcafes', cafesRouter);
 app.use('/bunnies', cafesRouter);
 app.use('/cats', cafesRouter);
 app.use('/dogs', cafesRouter);
 app.use('/hedgehogs', cafesRouter);
 app.use('/reptiles', cafesRouter);
+app.use('/new', cafesRouter);
 
-app.get('/', (req, res) => {
-  res.render('home/index', {cafes: res.locals.cafes});
-  console.log('hi')
-});
+
+// app.get('/', (req, res) => {
+//   res.render('home/index', {cafes: res.locals.cafes});
+//   console.log('hi')
+// });
 
 
 
