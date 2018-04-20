@@ -74,15 +74,17 @@ Include the full list of features that you are considering for POST MVP
 ## Functional Components
 
 - API
-- Location cafes using Google Maps API 
+- Location cafes using Google Places ID API 
 
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
 
-Form  |  H   | 6hrs   | 0hrs  |   0hrs
-Adding images   |  L   | 3hrs   | 0hrs  |   0hrs
-App Logic   |  H   | 10hrs   | 0hrs  |   0hrs
-Views   |  L   | 4hrs   | 0hrs  |   0hrs
+|  Priorities | Hours | 
+|---|---| 
+|Form | 6 hours |
+|Adding Images | 3 hours |
+|App Logic | 10 hours |
+|Views| 4 hours |
+
 
 ## Additional Technologies
  Use this section to list all supporting libraries and thier role in the project. 
