@@ -17,14 +17,13 @@ Animal cafes are popping up in major cities all over the world, to the delight o
 
 ![1](https://git.generalassemb.ly/darasy/project2/blob/master/imgs/IMG_6053.JPG?raw=true)
 
+![1](https://git.generalassemb.ly/darasy/project2/blob/master/imgs/IMG_6054.JPG?raw=true)
 
-<img src='http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6053.jpg'/> 
-
-<img src='http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6054.jpg'/> 
 
 ## Piority Matrix:
 
-<img src ='http://res.cloudinary.com/daracell/image/upload/v1524143941/Unit2%20Project/FullSizeRender.jpg'/> 
+![1](https://git.generalassemb.ly/darasy/project2/blob/master/imgs/FullSizeRender.jpg?raw=true)
+
 
 ## Technologies: 
 - HTML / EJS - used to render the views of the CRUD app
