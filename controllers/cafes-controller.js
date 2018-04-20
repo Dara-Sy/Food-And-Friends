@@ -96,6 +96,7 @@ function create(req, res, next) {
   cafeDb.createCafe(req.body)
   .then(data => {
     res.locals.newCafe = data;
+    console.log(data);
     next();
   })
   .catch(err => {

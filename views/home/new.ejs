@@ -5,19 +5,14 @@
 
   <!-- name, animal, location -->
 
-<form action="home/new" method="POST">
+<form action="/" method="POST">
   <input type="text" name="name" placeholder="Cafe Name" required/><br>
   <input type="text" name="animal" placeholder="Animal" required/><br>
   <input type="text" name="location" placeholder="Location" required/><br>
-<div class="cafe">
-  <select name="cafe_id">
-  <% cafes.forEach( cafe => { %>
-   <option value="<%=cafe.id%>"><%=cafe.name%> - <%=cafe.location%></option>
-  <% }) %>
-  </select>
 
-</div>
-  <input type="submit" value="Add Cafe" />
+
+
+   <input type="submit" value="Add Cafe" />
 </form>
 </div>
 <a href="/allcafes"> Back to Cafes </a>

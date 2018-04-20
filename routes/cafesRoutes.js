@@ -14,7 +14,7 @@ function sendError(err, req, res, next) {
 
 cafesRouter.route('/')
   .get(cafesController.getAllCafes, viewController.sendCafes, sendError)
-  .post(cafesController.create, sendError)
+  .post(cafesController.create, viewController.viewCreateCafe, sendError)
 
 cafesRouter.route('/allcafes')
   .get(cafesController.getAllCafesList, viewController.sendAllCafes, sendError)
@@ -36,5 +36,6 @@ cafesRouter.route('/reptiles')
 
 cafesRouter.route('/new')
   .get(cafesController.getAllCafesList, viewController.showCreateCafeForm)
+
 
 module.exports = cafesRouter;

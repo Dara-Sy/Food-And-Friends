@@ -59,11 +59,16 @@ sendReptiles(req, res) {
 
 
 showCreateCafeForm(req, res) {
-  res.render(`home/new`, res.locals.cafes);
-}
+  res.render(`home/new`, {
+    cafes: res.locals.newCafe});
+
+},
+
+viewCreateCafe(req, res) {
+  res.redirect('/allCafes');
+},
 
 
-,
 sendCreateCafe(req, res) {
   cafe = res.locals.newCafe
   res.redirect(`home/new/${cafe.id}`);

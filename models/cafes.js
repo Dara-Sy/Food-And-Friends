@@ -55,8 +55,8 @@ function createCafe(cafe) {
     INSERT INTO cafes
     (name, animal, location)
     VALUES ($/name/, $/animal/, $/location/)
-    RETURNING *`,
-    cafe);
+    RETURNING *`, cafe);
+  console.log(query);
   return query;
 }
 
