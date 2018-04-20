@@ -12,6 +12,9 @@ Animal cafes are popping up in major cities all over the world, to the delight o
 - Features include a log in session to save users' activities, such as favoriting a cafe or adding a cafe 
 - Users can search up cafes by animal type (ie. Dogs, cats, hedgehogs, etc.)
 
+## User Story: 
+As a consumer, I want enjoy a cup of coffee in a peaceful cafe where I can pet adorable animals. I would like to use a CRUD app where I can browse animal cafes all throughout the world. I want to search up cafes by animal type; I can add to the list any cafes that I know that aren't on the list.
+
 
 ## Wireframe:
 
