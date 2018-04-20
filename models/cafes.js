@@ -51,7 +51,6 @@ function getAllReptiles() {
 }
 
 function createCafe(cafe) {
-  debugger;
   const query = db.one(`
     INSERT INTO cafes
     (name, animal, location)

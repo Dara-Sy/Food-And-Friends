@@ -12,16 +12,21 @@ Animal cafes are popping up in major cities all over the world, to the delight o
 - Features include a log in session to save users' activities, such as favoriting a cafe or adding a cafe 
 - Users can search up cafes by animal type (ie. Dogs, cats, hedgehogs, etc.)
 
+## User Story: 
+As a consumer, I want enjoy a cup of coffee in a peaceful cafe where I can pet adorable animals. I would like to use a CRUD app where I can browse animal cafes all throughout the world. I want to search up cafes by animal type; I can add to the list any cafes that I know that aren't on the list.
+
 
 ## Wireframe:
 
-<img src='http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6053.jpg'/> 
+![1](https://git.generalassemb.ly/darasy/project2/blob/master/imgs/IMG_6053.JPG?raw=true)
 
-<img src='http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6054.jpg'/> 
+![1](https://git.generalassemb.ly/darasy/project2/blob/master/imgs/IMG_6054.JPG?raw=true)
+
 
 ## Piority Matrix:
 
-<img src ='http://res.cloudinary.com/daracell/image/upload/v1524143941/Unit2%20Project/FullSizeRender.jpg'/> 
+![1](https://git.generalassemb.ly/darasy/project2/blob/master/imgs/FullSizeRender.jpg?raw=true)
+
 
 ## Technologies: 
 - HTML / EJS - used to render the views of the CRUD app
@@ -74,18 +79,20 @@ Include the full list of features that you are considering for POST MVP
 ## Functional Components
 
 - API
-- Location cafes using Google Maps API 
+- Location cafes using Google Places ID API 
 
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
 
-Form  |  H   | 6hrs   | 0hrs  |   0hrs
-Adding images   |  L   | 3hrs   | 0hrs  |   0hrs
-App Logic   |  H   | 10hrs   | 0hrs  |   0hrs
-Views   |  L   | 4hrs   | 0hrs  |   0hrs
+|  Priorities | Hours | 
+|---|---| 
+|Form | 6 hours |
+|Adding Images | 3 hours |
+|App Logic | 10 hours |
+|Views| 4 hours |
+
 
 ## Additional Technologies
  Use this section to list all supporting libraries and thier role in the project. 
- Google Maps API
+ Google Places ID API
 
 
