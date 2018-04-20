@@ -15,6 +15,9 @@ Animal cafes are popping up in major cities all over the world, to the delight o
 
 ## Wireframe:
 
+![1](http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6053.jpg)
+
+
 <img src='http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6053.jpg'/> 
 
 <img src='http://res.cloudinary.com/daracell/image/upload/v1524074742/Unit2%20Project/IMG_6054.jpg'/> 
