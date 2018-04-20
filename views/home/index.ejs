@@ -1,0 +1,26 @@
+<h1> Food and Friends </h1>
+
+
+<h3> Browse by Animals: </h3>
+<ul>
+<li><a href = "/bunnies"> Bunnies</a></li>
+<li><a href = "/cats"> Cats</a></li>
+<li><a href = "/dogs"> Dogs</a></li>
+<li><a href = "/hedgehogs"> Hedgehogs</a></li>
+<li><a href = "/reptiles"> Reptiles</a></li>
+
+</ul>
+
+<h3> Featured Cafes:  </h3>
+
+<% cafes.forEach( cafe => { %>
+<div class="cafe">
+ <p><%=cafe.name%> - <%=cafe.location%></p>
+
+</div>
+<% }) %>
+
+
+
+<!-- <img src="<%#=house.img_url%>" /> -->
+<!-- <a href="/<%#=cafe.id%>"> -->

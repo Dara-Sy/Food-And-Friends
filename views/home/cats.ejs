@@ -1,0 +1,10 @@
+<h1> Cat Cafes </h1>
+
+<p> Featured Cafes:  </p>
+
+<% cafes.forEach( cafe => { %>
+<div class="cafe">
+ <p><%=cafe.name%> - <%=cafe.location%></p>
+
+</div>
+<% }) %>
