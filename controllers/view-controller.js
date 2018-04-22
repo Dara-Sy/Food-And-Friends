@@ -57,8 +57,14 @@ sendReptiles(req, res) {
   })
 },
 
+sendOneCafe(req, res) {
+  res.render('home/onecafe', {
+    cafe: res.locals.cafe
+  })
+},
 
-showCreateCafeForm(req, res) {
+
+showNewCafeForm(req, res) {
   res.render(`home/new`, {
     cafes: res.locals.newCafe});
 
@@ -69,16 +75,22 @@ viewCreateCafe(req, res) {
 },
 
 
-sendCreateCafe(req, res) {
-  cafe = res.locals.newCafe
-  res.redirect(`home/new/${cafe.id}`);
-},
+showEditForm(req, res) {
+    res.render('home/edit', {
+      cafe: res.locals.cafe,
+    });
+  },
 
-// function sendCafes(req, res) {
-//   res.render('home/new', {
-//     cafe: res.locals.newCafe,
-//   })
+viewUpdate(req, res) {
+    res.redirect(`/allcafes/${req.params.id}`);
+  },
 
+deleteCafe(req, res) {
+  res.redirect('/allcafes');
+  },
+
+// function deleteStudent(req, res) {
+//   res.redirect(`students/index`);
 // }
 
 

@@ -14,10 +14,12 @@ function sendError(err, req, res, next) {
 
 cafesRouter.route('/')
   .get(cafesController.getAllCafes, viewController.sendCafes, sendError)
-  .post(cafesController.create, viewController.viewCreateCafe, sendError)
+  .post(cafesController.createCafe, viewController.viewCreateCafe, sendError)
+  .put(cafesController.updateCafe, viewController.viewUpdate, sendError)
 
 cafesRouter.route('/allcafes')
   .get(cafesController.getAllCafesList, viewController.sendAllCafes, sendError)
+
 
 cafesRouter.route('/bunnies')
   .get(cafesController.getAllBunnies, viewController.sendBunnies, sendError)
@@ -35,7 +37,22 @@ cafesRouter.route('/reptiles')
   .get(cafesController.getAllReptiles, viewController.sendReptiles, sendError)
 
 cafesRouter.route('/new')
-  .get(cafesController.getAllCafesList, viewController.showCreateCafeForm)
+  .get(cafesController.getAllCafesList, viewController.showNewCafeForm)
+
+// showsRouter.get('/:id/edit', showsController.getOne, views.showEditForm, views.show404);
+
+cafesRouter.route('/:id/edit')
+  .get(cafesController.getOneCafe, viewController.showEditForm)
+
+// cafesRouter.route('/edit')
+  // .get(cafesController.getAllCafesList, viewController.showEditForm)
+
+cafesRouter.route('/:id')
+  .get(cafesController.getOneCafe, viewController.sendOneCafe, sendError)
+  // .put(cafesController.viewUpdate)
+  .delete(cafesController.destroy, viewController.deleteCafe)
+  // .put(cafesController.update)
+  // .delete(cafesController.destroy, viewController.deleteCafe)
 
 
 module.exports = cafesRouter;

@@ -1,3 +1,5 @@
+const pgp = require('pg-promise')();
+
 const db = require('../config/connection');
 
 function getAllCafes() {
@@ -13,6 +15,13 @@ function getAllCafesList() {
     ORDER BY name
   `);
   return queryPromise;
+}
+
+function getOneCafe(id) {
+  const query = db.one(`
+    SELECT * FROM cafes
+    WHERE id = $1`, id);
+  return query;
 }
 
 function getAllBunnies() {
@@ -50,6 +59,7 @@ function getAllReptiles() {
   return queryPromise;
 }
 
+
 function createCafe(cafe) {
   const query = db.one(`
     INSERT INTO cafes
@@ -60,6 +70,28 @@ function createCafe(cafe) {
   return query;
 }
 
+function updateCafe(cafe) {
+   const query = db.one(`
+      UPDATE cafes
+      SET
+      name = $/name/,
+      animal = $/animal/,
+      location = $/location/
+      WHERE id = $/id/
+      RETURNING *
+      `, cafe);
+   return query;
+  }
+
+function destroy(id) {
+  const query = db.none(`
+    DELETE FROM cafes
+    WHERE id = $1`, id);
+  return query;
+}
+
+
+
 
 module.exports = {
   getAllCafes,
@@ -69,6 +101,9 @@ module.exports = {
   getAllDogs,
   getAllHedgehogs,
   getAllReptiles,
-  createCafe
+  getOneCafe,
+  createCafe,
+  updateCafe,
+  destroy
 
   }

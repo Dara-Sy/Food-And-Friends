@@ -27,6 +27,7 @@ function getAllCafesList(req, res, next) {
   })
 }
 
+
 function getAllBunnies(req, res, next) {
   console.log('List the bunnies here');
   cafeDb.getAllBunnies()
@@ -92,7 +93,19 @@ function getAllReptiles(req, res, next) {
   })
 }
 
-function create(req, res, next) {
+function getOneCafe(req, res, next) {
+  cafeDb.getOneCafe(req.params.id)
+    .then(data=> {
+      res.locals.cafe = data;
+      next();
+    })
+    .catch(err=> {
+      next(err);
+    })
+}
+
+
+function createCafe(req, res, next) {
   cafeDb.createCafe(req.body)
   .then(data => {
     res.locals.newCafe = data;
@@ -103,6 +116,39 @@ function create(req, res, next) {
     next(err);
   })
 }
+
+
+function updateCafe(req, res, next) {
+    console.log(req.body, 'update controller');
+    cafeDb.updateCafe(req.body)
+      .then((show) => {
+        res.locals.cafe = data;
+        next();
+      })
+      .catch(err => next(err));
+  }
+
+function destroy(req, res, next) {
+  console.log(req.body, 'delete cafe');
+  cafeDb.destroy(req.params.id)
+    .then(() => next())
+    .catch(err => next(err));
+}
+
+// function destroy(req, res) {
+//   cafeDb.destroy(req.params.id)
+//     .then(() => {
+//       res.redirect('/allcafes');
+//     })
+//     .catch(err => {
+//       res.status(500).json({
+//         message:err.message
+//       })
+//     })
+// }
+
+
+
 module.exports = {
   getAllCafes,
   getAllCafesList,
@@ -111,5 +157,8 @@ module.exports = {
   getAllDogs,
   getAllHedgehogs,
   getAllReptiles,
-  create
+  getOneCafe,
+  createCafe,
+  updateCafe,
+  destroy
 }

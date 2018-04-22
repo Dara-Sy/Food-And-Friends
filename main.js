@@ -24,7 +24,9 @@ app.use('/cats', cafesRouter);
 app.use('/dogs', cafesRouter);
 app.use('/hedgehogs', cafesRouter);
 app.use('/reptiles', cafesRouter);
+app.use('/:id', cafesRouter);
 app.use('/new', cafesRouter);
+// app.use('/onecafe', cafesRouter);
 
 
 // app.get('/', (req, res) => {

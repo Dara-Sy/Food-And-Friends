@@ -1,0 +1,24 @@
+<div class="form-page">
+<div class="cafe">
+
+  <h1> Edit New Cafe! </h1>
+
+  <!-- name, animal, location -->
+
+
+<!-- method said POST? -->
+<form method="POST" action="/allcafes/?_method=PUT">
+
+
+
+  <input name="name" type="text" value="<%= cafe.name %>" />
+  <input name="animal" type="text" value="<%= cafe.animal %>" />
+  <input name="location" type="text" value="<%= cafe.location %>" />
+
+  <input type="submit" value="Edit it!" />
+</form>
+
+</div>
+<a href="/allcafes"> Back to Cafes </a>
+</div>
+
