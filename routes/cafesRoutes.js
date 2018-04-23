@@ -50,7 +50,7 @@ cafesRouter.route('/:id/edit')
 cafesRouter.route('/:id')
   .get(cafesController.getOneCafe, viewController.sendOneCafe, sendError)
   // .put(cafesController.viewUpdate)
-  .delete(cafesController.destroy, viewController.deleteCafe)
+  .delete(cafesController.destroy, viewController.deleteCafe, sendError)
   // .put(cafesController.update)
   // .delete(cafesController.destroy, viewController.deleteCafe)
 

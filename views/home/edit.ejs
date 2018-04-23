@@ -1,13 +1,17 @@
+<% include ../../partials/boilerplate %>
+
 <div class="form-page">
 <div class="cafe">
 
-  <h1> Edit New Cafe! </h1>
+  <h1> Edit Cafe! </h1>
 
   <!-- name, animal, location -->
 
 
 <!-- method said POST? -->
-<form method="POST" action="/allcafes/?_method=PUT">
+<!-- <form method="POST" action="/allcafes/?_method=PUT"> -->
+
+<form action="/<%=cafe.id%>?_method=PUT" method="POST">
 
 
 
@@ -21,4 +25,7 @@
 </div>
 <a href="/allcafes"> Back to All Cafes </a>
 </div>
+
+<% include ../../partials/end %>
+
 
