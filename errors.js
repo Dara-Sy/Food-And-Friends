@@ -69,7 +69,6 @@
 // Cannot read property 'id' of undefined
 
 
-
 // Promise { <pending> }
 // error here
 // POST /allcafes30?_method=Delete 500 18.587 ms - 61
@@ -80,7 +79,7 @@
 // }
 
 
- // /onecafe/30
+// /onecafe/30
 
 
 // GET /30/ 200 5.013 ms - 438
@@ -103,7 +102,4 @@
 
 // POST /cafes 302 8.201 ms - 62
 // GET /allCafes 404 0.324 ms - 147
-
-
-
 

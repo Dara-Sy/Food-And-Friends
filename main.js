@@ -2,6 +2,7 @@ const express = require('express');
 const logger = require('morgan');
 const axios = require('axios');
 const path = require('path');
+
 const app = express();
 const bodyParser = require('body-parser');
 
@@ -13,7 +14,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(logger('dev'));
-app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -30,10 +31,9 @@ app.use('/cafes/new', cafesRouter);
 
 
 app.get('/', (req, res) => {
-  res.render('home/index', {cafes: res.locals.cafes});
-  console.log('hi')
+  res.render('home/index', { cafes: res.locals.cafes });
+  console.log('hi');
 });
-
 
 
 app.listen(PORT, () => {

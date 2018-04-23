@@ -78,6 +78,7 @@ h3 {
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   right: 40px;
+  text-transform: capitalize;
 }
 
 h3 a:link {
