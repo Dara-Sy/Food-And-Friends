@@ -33,41 +33,47 @@ module.exports = {
     return query;
   },
 
-  getAllBunnies() {
-    const queryPromise = db.manyOrNone(`
+  getOneFav(id) {
+    const query = db.one(`
     SELECT * FROM cafes
-    WHERE animal = 'bunny'`);
-    // WHERE animal_id = 'bunny);
-    return queryPromise;
+    WHERE id = $1`, id);
+    return query;
   },
 
-  getAllCats() {
-    const queryPromise = db.manyOrNone(`
-    SELECT * FROM cafes
-    WHERE animal = 'cat'`);
-    return queryPromise;
-  },
 
-  getAllDogs() {
-    const queryPromise = db.manyOrNone(`
-    SELECT * FROM cafes
-    WHERE animal = 'dog'`);
-    return queryPromise;
-  },
 
-  getAllHedgehogs() {
-    const queryPromise = db.manyOrNone(`
-    SELECT * FROM cafes
-    WHERE animal = 'hedgehog'`);
-    return queryPromise;
-  },
+  // 1st attempt
+  // getOneFav(id) {
+  //   const query = db.one(`
+  //   SELECT * FROM cafes
+  //   JOIN animals
+  //     ON(animasls.id = cafe.id)
+  //   WHERE true
+  //   AND animal.name = $1,
+  //   AND
+  //   id = $1`, id);
+  //   return query;
+  // },
 
-  getAllReptiles() {
-    const queryPromise = db.manyOrNone(`
-    SELECT * FROM cafes
-    WHERE animal = 'reptile'`);
-    return queryPromise;
-  },
+
+  // 2nd attempt
+  //   getOneFav(filter) {
+  //   let filterString = '';
+
+  //   if ('animal' in filter) {
+  //     filterString = ' AND animal LIKE $/animal/ ';
+  //   }
+
+  //   const dynamicQuery = `
+  //     SELECT *
+  //     FROM cafes
+  //     WHERE true
+  //     ${filterString}
+  //     ORDER BY name
+  //   `;
+
+  //   return db.many(dynamicQuery, filter);
+  // },
 
 
   createCafe(cafe) {
@@ -81,6 +87,7 @@ module.exports = {
   },
 
   updateCafe(cafe) {
+    console.log("this is cafe in model:", cafe);
     const query = db.one(`
       UPDATE cafes
       SET

@@ -27,12 +27,21 @@ module.exports = {
   },
 
 
+  sendOneFav(req, res) {
+    res.render('home/favs', {
+      cafe: res.locals.cafe,
+    });
+  },
+
+
+
+
   showNewCafeForm(req, res) {
     res.render('home/new', { cafes: res.locals.newCafe });
   },
 
   viewCreateCafe(req, res) {
-    res.redirect('/allCafes');
+    res.redirect('home/allcafes');
   },
 
 
@@ -43,7 +52,7 @@ module.exports = {
   },
 
   viewUpdate(req, res) {
-    res.redirect(`/allcafes/${req.params.id}`);
+    res.redirect(`allcafes/${req.params.id}`);
   },
 
   deleteCafe(req, res) {

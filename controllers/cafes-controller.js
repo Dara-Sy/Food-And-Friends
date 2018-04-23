@@ -32,8 +32,32 @@ module.exports = {
       });
   },
 
+  getOneFav(req, res, next) {
+    cafeDb.getOneFav(req.params.id)
+      .then((data) => {
+        res.locals.cafe = data;
+        next();
+      })
+      .catch((err) => {
+        next(err);
+      });
+  },
+
+
 
   createCafe(req, res, next) {
+    cafeDb.createCafe(req.body)
+      .then((data) => {
+        res.locals.newCafe = data;
+        console.log(data);
+        next();
+      })
+      .catch((err) => {
+        next(err);
+      });
+  },
+
+  getOneFav(req, res, next) {
     cafeDb.createCafe(req.body)
       .then((data) => {
         res.locals.newCafe = data;
@@ -49,7 +73,7 @@ module.exports = {
   updateCafe(req, res, next) {
     console.log(req.body, 'update controller');
     cafeDb.updateCafe(req.body)
-      .then((show) => {
+      .then((data) => {
         res.locals.cafe = data;
         next();
       })

@@ -25,7 +25,7 @@ CREATE TABLE cafes(
 
 CREATE TABLE favorites(
   user_id INTEGER REFERENCES users(id),
-  id INTEGER REFERENCES cafes(id),
+  cafe_id INTEGER REFERENCES cafes(id),
   id SERIAL PRIMARY KEY
   );
 

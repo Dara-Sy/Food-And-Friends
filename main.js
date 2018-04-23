@@ -2,6 +2,7 @@ const express = require('express');
 const logger = require('morgan');
 const axios = require('axios');
 const path = require('path');
+const methodOverride = require('method-override');
 
 const app = express();
 const bodyParser = require('body-parser');
@@ -16,18 +17,18 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/cafes/', cafesRouter);
 app.use('/cafes/allcafes', cafesRouter);
-app.use('/cafes/bunnies', cafesRouter);
-app.use('/cafes/cats', cafesRouter);
-app.use('/cafes/dogs', cafesRouter);
-app.use('/cafes/hedgehogs', cafesRouter);
-app.use('/cafes/reptiles', cafesRouter);
 app.use('/cafes/:id', cafesRouter);
-app.use('/cafes/new', cafesRouter);
-// app.use('/onecafe', cafesRouter);
+
+// app.use('/cafes/new', cafesRouter);
+
+// app.use('/users/:id/faves', cafesRouter);
+// app.use('/users/:id/faves/:fid', cafesRouter);
+// app.use('/users/:id/faves/new', cafesRouter);
 
 
 app.get('/', (req, res) => {

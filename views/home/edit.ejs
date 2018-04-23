@@ -11,9 +11,9 @@
 <!-- method said POST? -->
 <!-- <form method="POST" action="/allcafes/?_method=PUT"> -->
 
-<form action="/cafes/<%=cafe.id%>/favs/edit?_method=PUT" method="POST">
+<form action="/cafes/<%=cafe.id%>?_method=PUT" method="POST">
 
-
+<input name="id" type="number" value="<%= cafe.id %>" style="display:none" />
 
   <input name="name" type="text" value="<%= cafe.name %>" />
   <input name="animal" type="text" value="<%= cafe.animal %>" />
