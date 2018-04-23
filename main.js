@@ -29,10 +29,10 @@ app.use('/cafes/new', cafesRouter);
 // app.use('/onecafe', cafesRouter);
 
 
-// app.get('/', (req, res) => {
-//   res.render('home/index', {cafes: res.locals.cafes});
-//   console.log('hi')
-// });
+app.get('/', (req, res) => {
+  res.render('home/index', {cafes: res.locals.cafes});
+  console.log('hi')
+});
 
 
 

@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS cafes
 
 -- create tables here
 CREATE TABLE users(
-  id SERIAL PRIMARY KEY,
+  user_id SERIAL PRIMARY KEY,
   name VARCHAR(255),
   username VARCHAR(255),
   password VARCHAR(255)
@@ -25,9 +25,14 @@ CREATE TABLE cafes(
 
 CREATE TABLE favorites(
   user_id INTEGER REFERENCES users(id),
-  cafe_id INTEGER REFERENCES cafes(id),
+  id INTEGER REFERENCES cafes(id),
   id SERIAL PRIMARY KEY
   );
+
+-- CREATE TABLE animals(
+--   id PRIMARY KEY,
+--   name VARCHAR(255)
+--   );
 
 -- create cafes
 

@@ -115,8 +115,6 @@ Include the full list of features that you are considering for POST MVP
 |   Post MVP: API Integration - Development |   M   |   3 |       |       |
 |   Post MVP: Design    |   H   |   3 |    2   |       |
 |   Post MVP: Comments Section  |   L   |   1 |       |       |
-
-|       |       |       |       |       |
 |   Sum Hours   |       |   33.5    |   7   |   9.2 |
 
 

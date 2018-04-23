@@ -1,7 +1,10 @@
 const cafeDb = require('../models/cafes');
 
 
-function getAllCafes(req, res, next) {
+module.exports = {
+
+
+getAllCafes(req, res, next) {
   console.log('List the cafes here');
 
   cafeDb.getAllCafes(req.query)
@@ -15,13 +18,15 @@ function getAllCafes(req, res, next) {
   })
 }
 
-function getAllCafesList(req, res, next) {
+, getAllCafesList(req, res, next) {
   console.log('List the cafes here');
   // pass in a req.query, if it exists
+  console.log(req.query)
   debugger
   cafeDb.getAllCafesList(req.query)
   .then(data => {
     res.locals.cafes = data;
+    console.log(res.locals.cafes)
     next();
 
   })
@@ -31,72 +36,8 @@ function getAllCafesList(req, res, next) {
 }
 
 
-function getAllBunnies(req, res, next) {
-  console.log('List the bunnies here');
-  cafeDb.getAllBunnies()
-  .then(data => {
-    res.locals.cafes = data;
-    next();
 
-  })
-  .catch(err => {
-    next(err);
-  })
-}
-
-function getAllCats(req, res, next) {
-  console.log('List the cats here');
-  cafeDb.getAllCats()
-  .then(data => {
-    res.locals.cafes = data;
-    next();
-
-  })
-  .catch(err => {
-    next(err);
-  })
-}
-
-function getAllDogs(req, res, next) {
-  console.log('List the dogs here');
-  cafeDb.getAllDogs()
-  .then(data => {
-    res.locals.cafes = data;
-    next();
-
-  })
-  .catch(err => {
-    next(err);
-  })
-}
-
-function getAllHedgehogs(req, res, next) {
-  console.log('List the hogs here');
-  cafeDb.getAllHedgehogs()
-  .then(data => {
-    res.locals.cafes = data;
-    next();
-
-  })
-  .catch(err => {
-    next(err);
-  })
-}
-
-function getAllReptiles(req, res, next) {
-  console.log('List the reptiles here');
-  cafeDb.getAllReptiles()
-  .then(data => {
-    res.locals.cafes = data;
-    next();
-
-  })
-  .catch(err => {
-    next(err);
-  })
-}
-
-function getOneCafe(req, res, next) {
+, getOneCafe(req, res, next) {
   cafeDb.getOneCafe(req.params.id)
     .then(data=> {
       res.locals.cafe = data;
@@ -108,7 +49,7 @@ function getOneCafe(req, res, next) {
 }
 
 
-function createCafe(req, res, next) {
+, createCafe(req, res, next) {
   cafeDb.createCafe(req.body)
   .then(data => {
     res.locals.newCafe = data;
@@ -121,7 +62,7 @@ function createCafe(req, res, next) {
 }
 
 
-function updateCafe(req, res, next) {
+, updateCafe(req, res, next) {
     console.log(req.body, 'update controller');
     cafeDb.updateCafe(req.body)
       .then((show) => {
@@ -131,14 +72,14 @@ function updateCafe(req, res, next) {
       .catch(err => next(err));
   }
 
-function destroy(req, res, next) {
+, destroy(req, res, next) {
   console.log(req.body, 'delete cafe');
   cafeDb.destroy(req.params.id)
     .then(() => next())
     .catch(err => next(err));
 }
 
-// function destroy(req, res) {
+// , destroy(req, res) {
 //   cafeDb.destroy(req.params.id)
 //     .then(() => {
 //       res.redirect('/allcafes');
@@ -152,16 +93,5 @@ function destroy(req, res, next) {
 
 
 
-module.exports = {
-  getAllCafes,
-  getAllCafesList,
-  getAllBunnies,
-  getAllCats,
-  getAllDogs,
-  getAllHedgehogs,
-  getAllReptiles,
-  getOneCafe,
-  createCafe,
-  updateCafe,
-  destroy
+
 }
