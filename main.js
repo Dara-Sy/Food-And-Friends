@@ -17,15 +17,15 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', cafesRouter);
-app.use('/allcafes', cafesRouter);
-app.use('/bunnies', cafesRouter);
-app.use('/cats', cafesRouter);
-app.use('/dogs', cafesRouter);
-app.use('/hedgehogs', cafesRouter);
-app.use('/reptiles', cafesRouter);
-app.use('/:id', cafesRouter);
-app.use('/new', cafesRouter);
+app.use('/cafes/', cafesRouter);
+app.use('/cafes/allcafes', cafesRouter);
+app.use('/cafes/bunnies', cafesRouter);
+app.use('/cafes/cats', cafesRouter);
+app.use('/cafes/dogs', cafesRouter);
+app.use('/cafes/hedgehogs', cafesRouter);
+app.use('/cafes/reptiles', cafesRouter);
+app.use('/cafes/:id', cafesRouter);
+app.use('/cafes/new', cafesRouter);
 // app.use('/onecafe', cafesRouter);
 
 

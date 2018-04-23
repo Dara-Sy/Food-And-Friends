@@ -8,13 +8,22 @@ function getAllCafes() {
   return queryPromise;
 }
 
-function getAllCafesList() {
-  const queryPromise = db.many(`
+function getAllCafesList(filter) {
+  let filterString='';
+
+  if (filter) {
+    filterString = ' AND animal LIKE $/animal/ ';
+  }
+
+  let dynamicQuery = `
     SELECT *
     FROM cafes
+    WHERE true
+    ${filterString}
     ORDER BY name
-  `);
-  return queryPromise;
+  `;
+  debugger;
+  return db.many(dynamicQuery, filter);
 }
 
 function getOneCafe(id) {
@@ -28,6 +37,7 @@ function getAllBunnies() {
   const queryPromise = db.manyOrNone(`
     SELECT * FROM cafes
     WHERE animal = 'bunny'`);
+    // WHERE animal_id = 'bunny);
   return queryPromise;
 }
 

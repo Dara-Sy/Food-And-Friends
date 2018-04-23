@@ -7,7 +7,7 @@
 <% cafes.forEach( cafe => { %>
 <div class="cafe">
  <p><%=cafe.name%> - <%=cafe.location%></p>
-  <a href='/<%= cafe.id%>'>Learn more</a>
+  <a href='/cafes/<%= cafe.id%>'>Learn more</a>
 
 </div>
 <% }) %>
@@ -15,6 +15,6 @@
 
 <br>
 
-<a href="/allcafes"> Back to All Cafes </a>
+<a href="/cafes/allcafes"> Back to All Cafes </a>
 
 <% include ../../partials/end %>

@@ -13,7 +13,7 @@ function sendError(err, req, res, next) {
 }
 
 cafesRouter.route('/')
-  .get(cafesController.getAllCafes, viewController.sendCafes, sendError)
+  .get(cafesController.getAllCafesList, viewController.sendCafes, sendError)
   .post(cafesController.createCafe, viewController.viewCreateCafe, sendError)
   .put(cafesController.updateCafe, viewController.viewUpdate, sendError)
 

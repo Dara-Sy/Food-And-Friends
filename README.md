@@ -91,6 +91,44 @@ Include the full list of features that you are considering for POST MVP
 |Views| 4 hours |
 
 
+
+
+
+
+
+
+## Functional Components
+|   Component   |   Priority    |   Est Time (Hrs)  |   Time Invested (Hrs) |   Actual Time (Hrs)   |
+|   --- |   :---:   |   :---:   |   :---:   |   :---:   |
+|   Database Creation   |   H   |   1   |   1   |   0.5 |
+|   Create Cafe Table   |   H   |   0.5 |   0.5 |   0.5 |
+|   Research on Cafes   |   M   |   1   |   0.5    |   0.5    |
+|   Collecting Data on Cafes   |   M   |   0.5   |   0.5    |   0.5    |
+|   Flex Box    |   L   |   1 |       |       |
+|   Video Presentation  |   L   |   1   |       |       |
+|   Create Cafes  |   H   |   2 |   3 |   3 |
+|   Read Cafes  |   H   |   1   |   1    |    1   |
+|   Update Cafes |   H   |   2   |   3    |       |
+|   Delete Cafes   |   H   |   2   |   3    |       |
+|   Post MVP: API Integration - Research    |   M   |   1   |   1    |   1    |
+|   Post MVP: API Integration - Planning    |   M   |   1 |       |       |
+|   Post MVP: API Integration - Development |   M   |   3 |       |       |
+|   Post MVP: Design    |   H   |   3 |    2   |       |
+|   Post MVP: Comments Section  |   L   |   1 |       |       |
+
+|       |       |       |       |       |
+|   Sum Hours   |       |   33.5    |   7   |   9.2 |
+
+
+
+
+
+
+
+
+
+
+
 ## Additional Technologies
  Use this section to list all supporting libraries and thier role in the project. 
  Google Places ID API

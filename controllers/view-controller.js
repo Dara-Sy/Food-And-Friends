@@ -5,8 +5,10 @@ module.exports = {
 
 sendCafes(req, res) {
   console.log('I send successful responses');
+  debugger;
   res.render('home/index', {
-    cafes: res.locals.cafes
+    cafes:  res.locals.cafes,
+    animal: req.query.animal || 'All',
   })
 },
 

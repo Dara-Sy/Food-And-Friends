@@ -6,16 +6,16 @@
   <h3>Animal: <%= cafe.animal %></h3>
   <h3>Location: <%= cafe.location %></h3>
 
-<form action="/<%=cafe.id%>/new" class='post' method="GET">
+<form action="/cafes/<%=cafe.id%>/new" class='post' method="GET">
   <input type="submit" class="addlink" value="Add">
-<form action="/<%=cafe.id%>/edit" class='put' method="GET">
+<form action="/cafes/<%=cafe.id%>/edit" class='put' method="GET">
   <input type="submit" class="editlink" value="Edit">
  <!--  <a href="/<#%= cafe.id %>/edit"> edit this cafe </a> -->
-  <form action="/<%= cafe.id %>?_method=Delete" class="delete" method="POST">
+  <form action="/cafes/<%= cafe.id %>?_method=Delete" class="delete" method="POST">
     <input type="submit" class="dellink" value="Delete">
   </form>
 
-  <a href='/allcafes'>See all cafes</a>
+  <a href='/cafes/allcafes'>See all cafes</a>
 </div>
 
 

@@ -1,19 +1,14 @@
-<% include ../../partials/boilerplate %>
-
-<h2> All Cafes:  </h2>
 
 <% cafes.forEach( cafe => { %>
 <div class="cafe">
  <p><%=cafe.name%> - <%=cafe.location%></p>
 
-  <a href='/<%= cafe.id%>'>Learn more</a>
+  <a href='/cafes/<%= cafe.id%>'>Learn more</a>
 
 </div>
 <% }) %>
 
-<br>
 
-<a href='/'> Return to Home</a>
+<!-- <a href='/cafes/'> Return to Home</a>
+ -->
 
-
-<% include ../../partials/end %>

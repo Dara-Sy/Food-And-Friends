@@ -3,7 +3,8 @@ const cafeDb = require('../models/cafes');
 
 function getAllCafes(req, res, next) {
   console.log('List the cafes here');
-  cafeDb.getAllCafes()
+
+  cafeDb.getAllCafes(req.query)
   .then(data => {
     res.locals.cafes = data;
     next();
@@ -16,7 +17,9 @@ function getAllCafes(req, res, next) {
 
 function getAllCafesList(req, res, next) {
   console.log('List the cafes here');
-  cafeDb.getAllCafesList()
+  // pass in a req.query, if it exists
+  debugger
+  cafeDb.getAllCafesList(req.query)
   .then(data => {
     res.locals.cafes = data;
     next();

@@ -14,7 +14,7 @@ CREATE TABLE users(
   password VARCHAR(255)
   );
 
-  --place_id INTEGER REFERENCES houses(id)
+  --place_id INTEGER REFERENCES cafes(id)
 
 CREATE TABLE cafes(
   id SERIAL PRIMARY KEY,

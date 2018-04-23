@@ -101,6 +101,9 @@
 // POST /onecafe/30?_method=Delete 404 0.878 ms - 150
 
 
+// POST /cafes 302 8.201 ms - 62
+// GET /allCafes 404 0.324 ms - 147
+
 
 
 
