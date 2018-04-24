@@ -5,12 +5,6 @@
 
   <h1> Edit Cafe! </h1>
 
-  <!-- name, animal, location -->
-
-
-<!-- method said POST? -->
-<!-- <form method="POST" action="/allcafes/?_method=PUT"> -->
-
 <form action="/cafes/<%=cafe.id%>?_method=PUT" method="POST">
 
 <input name="id" type="number" value="<%= cafe.id %>" style="display:none" />
@@ -23,7 +17,7 @@
 </form>
 
 </div>
-<a href="/cafes/allcafes"> Back to All Cafes </a>
+  <a href='/cafes/'>Return to Home</a>
 </div>
 
 <% include ../../partials/end %>

@@ -1,3 +1,6 @@
+// export database config
+// connect to the database server
+
 const pgp = require('pg-promise')();
 
 const config = {
