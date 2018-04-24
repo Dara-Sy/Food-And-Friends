@@ -104,7 +104,7 @@ Include the full list of features that you are considering for POST MVP
 |   Post MVP: Creating MakeFake User Data    |   M   |   1   |   0    |   0    |
 |   Post MVP: Design    |   H   |   2 |    3   |   3   |
 |   Post MVP: Comments Section  |   L   |   1 |   1    |   1   |
-|   Sum Hours   |       |   24    |   23   |   23 |
+|   Sum Hours   |       |   27    |   23   |   23 |
 
 
 
