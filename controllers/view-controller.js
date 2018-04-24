@@ -41,7 +41,8 @@ module.exports = {
   },
 
   viewCreateCafe(req, res) {
-    res.redirect('cafes/');
+    res.redirect('/cafes/');
+    //
   },
 
 
@@ -60,7 +61,8 @@ module.exports = {
     //   cafe: res.locals.cafe,
     // });
     // res.redirect('');
-    res.redirect('cafes/');
+    res.redirect('/cafes/');
+    // put a / in front of cafe because it has to do with absolute path
   },
 
 
