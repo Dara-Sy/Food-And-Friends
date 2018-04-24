@@ -9,6 +9,10 @@
     "debug": "nodemon --inspect main.js",
     "start": "node main.js"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "repository": {
     "type": "git",
     "url": "git@git.generalassemb.ly:darasy/project2.git"
@@ -20,6 +24,7 @@
     "body-parser": "^1.18.2",
     "ejs": "^2.5.9",
     "express": "^4.16.3",
+    "foobar": "^1.1.0",
     "method-override": "^2.3.10",
     "morgan": "^1.9.0",
     "nodemon": "^1.17.3",
