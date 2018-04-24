@@ -2,20 +2,35 @@
 
 <h1> Food and Friends </h1>
 
+<div class = "flex-container">
 
-<h3> Browse by Animals: </h3>
-<ul>
-<li><a href = "/cafes?animal=bunny"> Bunnies</a></li>
-<li><a href = "/cafes?animal=cat"> Cats</a></li>
-<li><a href = "/cafes?animal=dog"> Dogs</a></li>
-<li><a href = "/cafes?animal=hedgehog"> Hedgehogs</a></li>
-<li><a href = "/cafes?animal=reptile"> Reptiles</a></li>
+  <h3> Browse by Animals: </h3>
+    <ul>
+      <li>
+        <a href = "/cafes?animal=bunny"> Bunnies</a>
+      </li>
+      <li>
+        <a href = "/cafes?animal=cat"> Cats</a>
+      </li>
+      <li>
+        <a href = "/cafes?animal=dog"> Dogs</a>
+      </li>
+      <li>
+        <a href = "/cafes?animal=hedgehog"> Hedgehogs</a>
+      </li>
+      <li>
+        <a href = "/cafes?animal=reptile"> Reptiles</a>
+      </li>
 
-</ul>
+    </ul>
 
-<h3><%= `${animal} Cafes`%></h3>
+  <h3><%= `${animal} Cafes`%></h3>
 
-<% include allcafes %>
+
+
+  <% include allcafes %>
+
+</div>
 
 
 <% include ../../partials/end %>
