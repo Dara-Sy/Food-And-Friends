@@ -10,6 +10,7 @@ module.exports = {
     return queryPromise;
   },
 
+// the following code underneath this function was written by Jason Seminara
   getAllCafesList(filter) {
     let filterString = '';
 

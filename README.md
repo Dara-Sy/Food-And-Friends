@@ -130,4 +130,7 @@ I used the following resources above as a guidance to build the CRUD app and my 
 - https://git.generalassemb.ly/wdi-nyc-rover/harrypotter-homework-solution
 - https://github.com/davidazaria/da-api-challenge
 
+Additional resource:
+The req.query, query dynamics, and filter by animal name were written by Jason Seminara in cafes.js lines 14-27
+
 
