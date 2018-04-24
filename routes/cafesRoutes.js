@@ -14,7 +14,7 @@ function sendError(err, req, res, next) {
 
 cafesRouter.route('/')
   .get(cafesController.getAllCafesList, viewController.sendCafes, sendError)
-  .post(cafesController.createCafe, viewController.viewCreateCafe, sendError)
+  .post(cafesController.createCafe, viewController.viewCreateCafe, sendError);
 
 
 cafesRouter.route('/allcafes')
@@ -27,8 +27,8 @@ cafesRouter.route('/new')
 
 cafesRouter.route('/:id')
   .get(cafesController.getOneCafe, viewController.sendOneCafe, sendError)
-  .delete(cafesController.destroy, viewController.deleteCafe, sendError)
-  .put(cafesController.updateCafe, viewController.viewUpdate, sendError);
+  .put(cafesController.updateCafe, viewController.viewUpdate, sendError)
+  .delete(cafesController.destroy, viewController.deleteCafe, sendError);
 
 cafesRouter.route('/:id/edit')
   .get(cafesController.getOneCafe, viewController.showEditForm);

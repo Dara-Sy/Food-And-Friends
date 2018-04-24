@@ -41,7 +41,7 @@ module.exports = {
   },
 
   viewCreateCafe(req, res) {
-    res.redirect('home/allcafes');
+    res.redirect('cafes/');
   },
 
 
@@ -56,7 +56,11 @@ module.exports = {
   },
 
   deleteCafe(req, res) {
-    res.redirect('/allcafes');
+    // res.render('home/index', {
+    //   cafe: res.locals.cafe,
+    // });
+    // res.redirect('');
+    res.redirect('cafes/');
   },
 
 
