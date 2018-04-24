@@ -9,6 +9,6 @@ const config = {
   database: 'cafe_db',
 };
 
-const db = pgp(config);
+const db = pgp(process.env.DATABASE_URL || config);
 
 module.exports = db;
