@@ -100,6 +100,8 @@ Include the full list of features that you are considering for POST MVP
 |   Post MVP: API Integration - Research    |   M   |   1   |   1    |   1    |
 |   Post MVP: API Integration - Planning    |   M   |   1 |   0    |   0    |
 |   Post MVP: API Integration - Development |   M   |   3 |   0    |   0    |
+|   Post MVP: User Authentication    |   M   |   2   |   0    |   0    |
+|   Post MVP: Creating MakeFake User Data    |   M   |   1   |   0    |   0    |
 |   Post MVP: Design    |   H   |   2 |    3   |   3   |
 |   Post MVP: Comments Section  |   L   |   1 |   1    |   1   |
 |   Sum Hours   |       |   24    |   23   |   23 |
