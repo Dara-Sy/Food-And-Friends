@@ -22,6 +22,10 @@ As a consumer, I want enjoy a cup of coffee in a peaceful cafe where I can pet a
 
 ![1](https://git.generalassemb.ly/darasy/project2/blob/master/imgs/IMG_6054.JPG?raw=true)
 
+Updated Wireframe:
+
+![1](https://git.generalassemb.ly/darasy/project2/blob/master/imgs/IMG-6106.JPG?raw=true)
+
 
 ## Piority Matrix:
 
